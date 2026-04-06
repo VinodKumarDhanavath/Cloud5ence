@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Terraform
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/*.tfvars
+infra/tfplan
+
+# Secrets — NEVER commit
+*.env
+.env*
+secrets/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
