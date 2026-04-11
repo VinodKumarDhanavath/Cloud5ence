@@ -10,7 +10,7 @@ terraform {
   # backend "s3" {
   #   bucket = "cloud5ence-tfstate"
   #   key    = "website/terraform.tfstate"
-  #   region = "ca-central-1"
+  #   region = "us-east-1"
   # }
 }
 
@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias  = "us_east_1"
+  alias  = "us-east-1"
   region = "us-east-1"
 }
 
