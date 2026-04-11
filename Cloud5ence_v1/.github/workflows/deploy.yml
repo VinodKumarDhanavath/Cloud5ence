@@ -23,15 +23,17 @@ jobs:
 
       - name: Sync HTML (no-cache)
         run: |
-          aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/
+          aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/ \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "infra/*" \
             --exclude ".gitignore" \
             --exclude "README.md" \
-            --exclude ".DS_Store" \
             --exclude "CUSTOMISE.md" \
+            --exclude "PROJECT_NOTES.md" \
+            --exclude "ISSUES_AND_INTERVIEW_QA.md" \
+            --exclude "*.md" \
             --include "*.html" \
             --cache-control "public, max-age=0, must-revalidate"
 
