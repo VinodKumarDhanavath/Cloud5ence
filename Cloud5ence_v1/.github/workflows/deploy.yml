@@ -23,7 +23,7 @@ jobs:
 
       - name: Sync HTML (no-cache)
         run: |
-          aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}/ \
+          aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
@@ -37,7 +37,7 @@ jobs:
 
       - name: Sync assets (long cache)
         run: |
-          aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}/ \
+          aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/
             --exclude "*" \
             --include "*.png" \
             --include "*.jpg" \
