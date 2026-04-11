@@ -19,5 +19,4 @@ jobs:
       - name: Sync website files to S3
         run: aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/ --exclude "*" --include "*.html" --include "*.png" --include "*.jpg" --include "*.jpeg" --include "*.pdf" --include "*.svg" --include "*.ico" --cache-control "public, max-age=0, must-revalidate"
       - name: Invalidate CloudFront cache
-        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDF        run: aws cloudfront create-invalidation --distribution-id n:        run: aws clououd5ence.com"
-EOf
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDF        run: aws cloudfront create-invalidation --distribution-id n:        run: aws cloudfront creat"
