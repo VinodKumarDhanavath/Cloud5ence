@@ -24,7 +24,6 @@ jobs:
       - name: Sync website files to S3
         run: |
           aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/ \
-            --delete \
             --exclude "*" \
             --include "*.html" \
             --include "*.png" \
