@@ -215,21 +215,118 @@
   footer a:hover{color:#fff}
   .footer-links{display:flex;gap:24px;list-style:none}
 
+  /* ── FLOATING BACK BUTTON (mobile only) ── */
+  .float-back{
+    display:none;
+    position:fixed;
+    bottom:24px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--black);
+    color:#fff;
+    font-size:13px;
+    font-weight:500;
+    padding:10px 20px;
+    border-radius:24px;
+    border:none;
+    cursor:pointer;
+    z-index:999;
+    box-shadow:0 4px 16px rgba(0,0,0,.25);
+    white-space:nowrap;
+    font-family:'Inter',sans-serif;
+    transition:opacity .2s;
+  }
+  @media(max-width:768px){
+    .float-back{display:block}
+    .float-back.hidden{display:none}
+  }
+
+  /* ── HAMBURGER ── */
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;margin-left:auto;background:none;border:none}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all .3s}
+  .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-hamburger.open span:nth-child(2){opacity:0}
+  .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
   /* ── RESPONSIVE ── */
-  @media(max-width:900px){
-    nav{padding:0 20px}
+  @media(max-width:768px){
+    /* Nav */
+    nav{padding:0 16px;position:relative;flex-wrap:wrap}
+    .nav-hamburger{display:flex}
     .nav-social{display:none}
-    .hero-inner{grid-template-columns:1fr;padding:0 20px}
-    .hero-right{display:none}
-    .wrap{padding:48px 20px}
+    .nav-links{
+      display:none;
+      flex-direction:column;
+      width:100%;
+      background:var(--nav);
+      padding:12px 0 16px;
+      gap:0;
+      order:3;
+    }
+    .nav-links.open{display:flex}
+    .nav-links li{width:100%}
+    .nav-links li a{display:block;padding:10px 20px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-links li a:hover{background:rgba(255,255,255,.05)}
+
+    /* Hero */
+    .hero-inner{
+      grid-template-columns:1fr;
+      padding:32px 20px 28px;
+      min-height:unset;
+      gap:24px;
+    }
+    .hero-right{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:280px;
+    }
+    .hero-photo-wrap{
+      width:220px;
+      height:280px;
+    }
+    .hero-h1{font-size:clamp(36px,10vw,52px)}
+    .hero-p{font-size:15px}
+    .hero-btns{flex-direction:column;gap:10px}
+    .hero-btns a{width:100%;text-align:center}
+    .eyebrow{font-size:10px}
+
+    /* Stats */
+    .stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:0}
+    .stat{padding:20px 16px;border-right:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
+
+    /* Content */
+    .wrap{padding:36px 16px}
     .parts,.skills-2col,.contact-grid,.port-grid,.facts-2col{grid-template-columns:1fr}
-    .proj-grid{grid-template-columns:1fr 1fr}
-    .strip-grid{grid-template-columns:repeat(3,1fr);padding:20px}
-    .stats-bar{flex-wrap:wrap}
-    .stat{padding:20px 32px;flex:1;min-width:120px}
+    .proj-grid{grid-template-columns:1fr}
+    .strip-grid{grid-template-columns:repeat(3,1fr);padding:16px}
     .tl-item{grid-template-columns:1fr;gap:4px}
-    footer{flex-direction:column;gap:12px;text-align:center;padding:24px 20px}
-    .divider{margin:0 20px}
+    .form-2col{grid-template-columns:1fr}
+
+    /* Certifications */
+    #certifications .wrap > div[style*="grid-template-columns:repeat(3"]{
+      grid-template-columns:1fr !important;
+    }
+
+    /* Footer */
+    footer{flex-direction:column;gap:12px;text-align:center;padding:24px 16px}
+    .footer-links{flex-wrap:wrap;justify-content:center;gap:16px}
+    .divider{margin:0 16px}
+
+    /* Blog */
+    .blog-row{flex-direction:column;gap:8px}
+    .blog-num{font-size:20px}
+
+    /* Portfolio cards */
+    .card-thumb{height:120px}
+    .thumb-label{font-size:32px}
+  }
+
+  @media(max-width:480px){
+    .hero-photo-wrap{width:180px;height:240px}
+    .stats-bar{grid-template-columns:1fr 1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .strip-grid{grid-template-columns:repeat(2,1fr)}
   }
 </style>
 </head>
@@ -241,7 +338,10 @@
     <div class="logo-mark">VK</div>
     <div class="logo-txt">Cloud<span>5</span>ence</div>
   </a>
-  <ul class="nav-links">
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
     <li><a class="active" onclick="showPage('about');return false;" href="#">about</a></li>
     <li><a onclick="showPage('portfolio');return false;" href="#">portfolio</a></li>
     <li><a onclick="showPage('projects');return false;" href="#">projects</a></li>
@@ -264,6 +364,9 @@
     </a>
   </div>
 </nav>
+
+<!-- Floating back button — mobile only, hidden on about page -->
+<button class="float-back hidden" id="float-back" onclick="showPage('about')">← Home</button>
 
 <!-- ═══════════════════════════ ABOUT PAGE ═══════════════════════════ -->
 <div id="about" class="pg active">
@@ -1235,7 +1338,32 @@
     var links = document.querySelectorAll('.nav-links a');
     if(map[name] !== undefined && links[map[name]]) links[map[name]].classList.add('active');
     window.scrollTo({top:0,behavior:'smooth'});
+    // Show/hide floating back button — hide on about/home page
+    var floatBack = document.getElementById('float-back');
+    if(floatBack){
+      if(name === 'about'){
+        floatBack.classList.add('hidden');
+      } else {
+        floatBack.classList.remove('hidden');
+      }
+    }
     return false;
+  }
+
+  /* ── HAMBURGER MENU ── */
+  var hamburger = document.getElementById('hamburger');
+  var navLinks  = document.getElementById('nav-links');
+  if(hamburger){
+    hamburger.addEventListener('click', function(){
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
   }
 
   /* ── CONTACT FORM (mailto fallback until backend connected) ── */
