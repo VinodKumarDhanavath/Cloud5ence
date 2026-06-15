@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinod Kumar Dhanavath — DevOps & Cloud Engineer | Cloud5ence</title>
-<meta name="description" content="Senior DevOps & Cloud Engineer in Ottawa, Canada. 7+ years across AWS, Azure, GCP. AWS Certified DevOps Engineer Professional + Microsoft Certified DevOps Engineer Expert.">
-<meta property="og:title" content="Vinod Kumar Dhanavath — DevOps & Cloud Engineer">
-<meta property="og:description" content="7+ years building CI/CD pipelines, Kubernetes platforms, and secure cloud infrastructure across AWS, Azure, and GCP.">
+<title>Vinod Kumar Dhanavath — Amazon Connect Developer | CCaaS Engineer | Cloud5ence</title>
+<meta name="description" content="Senior Amazon Connect Developer & CCaaS Engineer in Ottawa, Canada. 8+ years across Amazon Connect, Genesys Cloud CX, AWS Serverless, Salesforce Service Cloud Voice, and conversational AI.">
+<meta property="og:title" content="Vinod Kumar Dhanavath — Amazon Connect Developer | CCaaS Engineer">
+<meta property="og:description" content="8+ years designing, migrating, and operating cloud contact centers across banking, telecom, insurance, and BPO. Amazon Connect · Genesys Cloud CX · AWS Serverless · Salesforce SCV.">
 <meta property="og:url" content="https://cloud5ence.com">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -142,12 +142,12 @@
   .card-thumb{height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
   .thumb-label{font-family:'Outfit',sans-serif;font-size:44px;font-weight:800;opacity:.22;color:var(--black);letter-spacing:-1px;user-select:none}
   .badge{position:absolute;top:14px;left:14px;font-size:10px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;padding:4px 10px;border-radius:3px}
-  .b-azure{background:#deeafa;color:#0052a3}
+  .b-connect{background:#fff0dc;color:#8a4500}
   .b-aws{background:#fff0dc;color:#8a4500}
-  .b-k8s{background:#ede9fe;color:#4c1d95}
-  .b-tf{background:#dcf0e8;color:#14532d}
-  .b-sec{background:#ffe4e4;color:#7f1d1d}
-  .b-gcp{background:#fce8ff;color:#5b21b6}
+  .b-lex{background:#ede9fe;color:#4c1d95}
+  .b-sfdc{background:#deeafa;color:#0052a3}
+  .b-genesys{background:#dcf0e8;color:#14532d}
+  .b-migration{background:#ffe4e4;color:#7f1d1d}
   .card-body{padding:20px 22px 22px}
   .card-title{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:7px;letter-spacing:-.2px;line-height:1.3}
   .card-desc{font-size:13px;color:var(--body);line-height:1.6}
@@ -250,78 +250,39 @@
 
   /* ── RESPONSIVE ── */
   @media(max-width:768px){
-    /* Nav */
     nav{padding:0 16px;position:relative;flex-wrap:wrap}
     .nav-hamburger{display:flex}
     .nav-social{display:none}
-    .nav-links{
-      display:none;
-      flex-direction:column;
-      width:100%;
-      background:var(--nav);
-      padding:12px 0 16px;
-      gap:0;
-      order:3;
-    }
+    .nav-links{display:none;flex-direction:column;width:100%;background:var(--nav);padding:12px 0 16px;gap:0;order:3;}
     .nav-links.open{display:flex}
     .nav-links li{width:100%}
     .nav-links li a{display:block;padding:10px 20px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.06)}
     .nav-links li a:hover{background:rgba(255,255,255,.05)}
-
-    /* Hero */
-    .hero-inner{
-      grid-template-columns:1fr;
-      padding:32px 20px 28px;
-      min-height:unset;
-      gap:24px;
-    }
-    .hero-right{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:280px;
-    }
-    .hero-photo-wrap{
-      width:220px;
-      height:280px;
-    }
+    .hero-inner{grid-template-columns:1fr;padding:32px 20px 28px;min-height:unset;gap:24px;}
+    .hero-right{display:flex;justify-content:center;align-items:center;min-height:280px;}
+    .hero-photo-wrap{width:220px;height:280px;}
     .hero-h1{font-size:clamp(36px,10vw,52px)}
     .hero-p{font-size:15px}
     .hero-btns{flex-direction:column;gap:10px}
     .hero-btns a{width:100%;text-align:center}
     .eyebrow{font-size:10px}
-
-    /* Stats */
     .stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:0}
     .stat{padding:20px 16px;border-right:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
-
-    /* Content */
     .wrap{padding:36px 16px}
     .parts,.skills-2col,.contact-grid,.port-grid,.facts-2col{grid-template-columns:1fr}
     .proj-grid{grid-template-columns:1fr}
     .strip-grid{grid-template-columns:repeat(3,1fr);padding:16px}
     .tl-item{grid-template-columns:1fr;gap:4px}
     .form-2col{grid-template-columns:1fr}
-
-    /* Certifications */
-    #certifications .wrap > div[style*="grid-template-columns:repeat(3"]{
-      grid-template-columns:1fr !important;
-    }
-
-    /* Footer */
+    #certifications .wrap > div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important;}
     footer{flex-direction:column;gap:12px;text-align:center;padding:24px 16px}
     .footer-links{flex-wrap:wrap;justify-content:center;gap:16px}
     .divider{margin:0 16px}
-
-    /* Blog */
     .blog-row{flex-direction:column;gap:8px}
     .blog-num{font-size:20px}
-
-    /* Portfolio cards */
     .card-thumb{height:120px}
     .thumb-label{font-size:32px}
   }
-
   @media(max-width:480px){
     .hero-photo-wrap{width:180px;height:240px}
     .stats-bar{grid-template-columns:1fr 1fr}
@@ -351,7 +312,7 @@
   </ul>
   <div class="nav-social">
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/vinod-kumar-dhanavath/" target="_blank" rel="noopener" title="LinkedIn">
+    <a href="https://www.linkedin.com/in/vinodkdhanavath" target="_blank" rel="noopener" title="LinkedIn">
       <svg class="si" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a>
     <!-- GitHub -->
@@ -359,13 +320,13 @@
       <svg class="si" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
     </a>
     <!-- Email -->
-    <a href="/cdn-cgi/l/email-protection#05536c6b6a612b616d646b647364716d3531343d456268646c692b666a68" title="Email">
+    <a href="mailto:vinoddhanavath278@gmail.com" title="Email">
       <svg class="si" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.904.732-1.636 1.636-1.636h.909L12 10.09l9.455-6.27h.909A1.636 1.636 0 0124 5.457z"/></svg>
     </a>
   </div>
 </nav>
 
-<!-- Floating back button — mobile only, hidden on about page -->
+<!-- Floating back button — mobile only -->
 <button class="float-back hidden" id="float-back" onclick="showPage('about')">← Home</button>
 
 <!-- ═══════════════════════════ ABOUT PAGE ═══════════════════════════ -->
@@ -375,11 +336,11 @@
   <div class="hero">
     <div class="hero-inner">
       <div class="hero-left">
-        <div class="eyebrow">DevOps &amp; Cloud Engineer · Ottawa, Canada</div>
+        <div class="eyebrow">Amazon Connect Developer · CCaaS Engineer · Ottawa, Canada</div>
         <h1 class="hero-h1">about.</h1>
         <p class="hero-p">
-          I'm a DevOps and Cloud Engineer based in Ottawa, Canada.<br><br>
-          Since 2017, I've been designing <strong>CI/CD pipelines, Kubernetes platforms</strong> and secure cloud infrastructure across AWS, Azure, and GCP — from Jio Mumbai to National Bank Ottawa.
+          I'm an Amazon Connect Developer and CCaaS Engineer based in Ottawa, Canada.<br><br>
+          Since 2017, I've been designing <strong>contact center solutions, IVR journeys, and conversational AI</strong> across Amazon Connect, Genesys Cloud CX, and AWS serverless — from Jio Mumbai and Genpact Hyderabad to National Bank Ottawa.
         </p>
         <div class="hero-btns">
           <a class="btn-dark" onclick="showPage('contact');return false;" href="#">Hire me</a>
@@ -387,31 +348,16 @@
         </div>
       </div>
       <div class="hero-right">
-        <!-- Paint strokes (like Adham's decorative element) -->
         <svg class="paint-svg" viewBox="0 0 180 180" fill="none">
           <path d="M30 130 Q75 95 155 115" stroke="#f59e0b" stroke-width="16" stroke-linecap="round" opacity=".55"/>
           <path d="M50 158 Q90 130 160 148" stroke="#10b981" stroke-width="10" stroke-linecap="round" opacity=".45"/>
           <path d="M20 150 Q65 122 138 138" stroke="#f97316" stroke-width="7" stroke-linecap="round" opacity=".38"/>
         </svg>
-        <!-- 
-          ════════════════════════════════════════════
-          YOUR HEADSHOT
-          ════════════════════════════════════════════
-          Replace the src below with your actual image filename.
-          The image is loaded from your GitHub repo.
-          
-          Example: if your file is "vinod-headshot.jpg" in the repo root:
-          src="https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/vinod-headshot.jpg"
-          
-          For best results: portrait photo, light/white background,
-          upper body visible, cut-out style works great.
-          ════════════════════════════════════════════
-        -->
         <div class="hero-photo-wrap">
           <img
             id="headshot-img"
             src="WebsitePotrait.png"
-            alt="Vinod Kumar Dhanavath — DevOps & Cloud Engineer"
+            alt="Vinod Kumar Dhanavath — Amazon Connect Developer & CCaaS Engineer"
             onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/WebsitePotrait.png';this.onerror=null;"
           >
         </div>
@@ -424,41 +370,33 @@
 
   <!-- Stats bar -->
   <div class="stats-bar">
-    <div class="stat"><div class="stat-n">7<span>+</span></div><div class="stat-l">Years experience</div></div>
-    <div class="stat"><div class="stat-n">3</div><div class="stat-l">Cloud platforms</div></div>
-    <div class="stat"><div class="stat-n">4</div><div class="stat-l">Enterprises delivered</div></div>
-    <div class="stat"><div class="stat-n">2</div><div class="stat-l">Certifications</div></div>
+    <div class="stat"><div class="stat-n">8<span>+</span></div><div class="stat-l">Years experience</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l">Countries &amp; markets</div></div>
+    <div class="stat"><div class="stat-n">5</div><div class="stat-l">Enterprises delivered</div></div>
+    <div class="stat"><div class="stat-n">6</div><div class="stat-l">Certifications</div></div>
   </div>
 
-
-  <!-- Photo strip — click any photo to read Vinod's story -->
+  <!-- Photo strip -->
   <div style="padding:28px 48px 0;max-width:1200px;margin:0 auto">
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px">
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="Ottawa.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Ottawa.jpg';this.onerror=null;" alt="Ottawa" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="Workspace.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Workspace.jpg';this.onerror=null;" alt="Workspace" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="working.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/working.jpg';this.onerror=null;" alt="Working" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="WebsitePotrait.png" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/WebsitePotrait.png';this.onerror=null;" alt="Vinod" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
       </div>
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="Personal.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Personal.jpg';this.onerror=null;" alt="Personal" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-
       <div onclick="showPage('mystory')" style="aspect-ratio:1;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
         <img src="Team.png" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Team.png';this.onerror=null;" alt="Team" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-
     </div>
     <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:10px;cursor:pointer" onclick="showPage('mystory')">Click any photo to read my story →</p>
   </div>
@@ -471,25 +409,25 @@
     <h2 class="sec-h2">Two disciplines.<br>One engineer.</h2>
     <div class="parts">
       <div class="part">
-        <div class="part-h">Part cloud architect</div>
+        <div class="part-h">Part contact center architect</div>
         <ul class="part-list">
-          <li>Multi-cloud strategy (AWS · Azure · GCP)</li>
-          <li>Landing zones &amp; governance</li>
-          <li>Disaster recovery &amp; resilience</li>
-          <li>FinOps &amp; cost optimisation</li>
-          <li>Security &amp; compliance (HIPAA, SOC 2, GDPR)</li>
-          <li>Cloud migrations (SMS, DMS, Snowball)</li>
+          <li>Amazon Connect contact flows &amp; IVR design</li>
+          <li>Genesys Cloud CX operations &amp; migration</li>
+          <li>Skills-based routing, queues &amp; callbacks</li>
+          <li>Omnichannel voice, chat &amp; email support</li>
+          <li>CCaaS migrations (Genesys → Amazon Connect)</li>
+          <li>PCI-DSS, PIPEDA &amp; OSFI-aligned delivery</li>
         </ul>
       </div>
       <div class="part">
-        <div class="part-h">Part automation engineer</div>
+        <div class="part-h">Part integration &amp; AI engineer</div>
         <ul class="part-list">
-          <li>Terraform · Pulumi · CloudFormation · ARM</li>
-          <li>Kubernetes · EKS · AKS · Helm · OpenShift</li>
-          <li>Jenkins · Azure DevOps · GitHub Actions</li>
-          <li>ArgoCD · GitOps workflows</li>
-          <li>Python · Bash · PowerShell scripting</li>
-          <li>Prometheus · Grafana · ELK observability</li>
+          <li>Amazon Lex voice bots &amp; chatbots</li>
+          <li>Salesforce Service Cloud Voice CTI integration</li>
+          <li>AWS Lambda · API Gateway · DynamoDB · Kinesis</li>
+          <li>Contact Lens speech analytics &amp; sentiment</li>
+          <li>CloudFormation · Terraform · Jenkins CI/CD</li>
+          <li>Splunk · CloudWatch · Cyara monitoring &amp; testing</li>
         </ul>
       </div>
     </div>
@@ -498,48 +436,48 @@
     <div class="overline">core skills</div>
     <div class="skills-2col">
       <div>
-        <div class="sk"><span class="sk-name">AWS Architecture</span><div class="sk-track"><div class="sk-fill" style="width:93%"></div></div><span class="sk-pct">93%</span></div>
-        <div class="sk"><span class="sk-name">Azure / AKS</span><div class="sk-track"><div class="sk-fill" style="width:91%"></div></div><span class="sk-pct">91%</span></div>
-        <div class="sk"><span class="sk-name">CI/CD Pipeline Design</span><div class="sk-track"><div class="sk-fill" style="width:94%"></div></div><span class="sk-pct">94%</span></div>
-        <div class="sk"><span class="sk-name">Kubernetes / Helm</span><div class="sk-track"><div class="sk-fill" style="width:90%"></div></div><span class="sk-pct">90%</span></div>
+        <div class="sk"><span class="sk-name">Amazon Connect</span><div class="sk-track"><div class="sk-fill" style="width:95%"></div></div><span class="sk-pct">95%</span></div>
+        <div class="sk"><span class="sk-name">Genesys Cloud CX</span><div class="sk-track"><div class="sk-fill" style="width:90%"></div></div><span class="sk-pct">90%</span></div>
+        <div class="sk"><span class="sk-name">AWS Serverless</span><div class="sk-track"><div class="sk-fill" style="width:92%"></div></div><span class="sk-pct">92%</span></div>
+        <div class="sk"><span class="sk-name">Amazon Lex / Conv. AI</span><div class="sk-track"><div class="sk-fill" style="width:88%"></div></div><span class="sk-pct">88%</span></div>
       </div>
       <div>
-        <div class="sk"><span class="sk-name">Terraform / IaC</span><div class="sk-track"><div class="sk-fill" style="width:92%"></div></div><span class="sk-pct">92%</span></div>
-        <div class="sk"><span class="sk-name">Security &amp; Compliance</span><div class="sk-track"><div class="sk-fill" style="width:87%"></div></div><span class="sk-pct">87%</span></div>
-        <div class="sk"><span class="sk-name">Python / Bash / PS</span><div class="sk-track"><div class="sk-fill" style="width:85%"></div></div><span class="sk-pct">85%</span></div>
-        <div class="sk"><span class="sk-name">FinOps / Cost Opt.</span><div class="sk-track"><div class="sk-fill" style="width:83%"></div></div><span class="sk-pct">83%</span></div>
+        <div class="sk"><span class="sk-name">Salesforce SCV / CTI</span><div class="sk-track"><div class="sk-fill" style="width:87%"></div></div><span class="sk-pct">87%</span></div>
+        <div class="sk"><span class="sk-name">IaC (CloudFormation / TF)</span><div class="sk-track"><div class="sk-fill" style="width:85%"></div></div><span class="sk-pct">85%</span></div>
+        <div class="sk"><span class="sk-name">Node.js / Python</span><div class="sk-track"><div class="sk-fill" style="width:83%"></div></div><span class="sk-pct">83%</span></div>
+        <div class="sk"><span class="sk-name">Monitoring &amp; Analytics</span><div class="sk-track"><div class="sk-fill" style="width:86%"></div></div><span class="sk-pct">86%</span></div>
       </div>
     </div>
 
-    <!-- Certifications -->
+    <!-- Certifications preview -->
     <div class="overline" style="margin-top:48px">certifications</div>
     <div class="certs">
-      <a class="cert-card" href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank" rel="noopener">
+      <div class="cert-card" style="cursor:default">
         <div class="cert-icon aws">☁️</div>
         <div>
-          <div class="cert-name">AWS Certified DevOps Engineer</div>
-          <div class="cert-sub">Professional · Amazon Web Services</div>
+          <div class="cert-name">AWS Solutions Architect</div>
+          <div class="cert-sub">Associate · Amazon Web Services</div>
         </div>
-      </a>
-      <a class="cert-card" href="https://learn.microsoft.com/en-us/certifications/devops-engineer/" target="_blank" rel="noopener">
-        <div class="cert-icon az">🔷</div>
+      </div>
+      <div class="cert-card" style="cursor:default">
+        <div class="cert-icon aws">🤖</div>
         <div>
-          <div class="cert-name">Microsoft Certified</div>
-          <div class="cert-sub">DevOps Engineer Expert · AZ-400</div>
+          <div class="cert-name">AWS Machine Learning</div>
+          <div class="cert-sub">Associate · Amazon Web Services</div>
         </div>
-      </a>
-      <a class="cert-card" href="Claud101_Cert.pdf" target="_blank" rel="noopener">
-        <div class="cert-icon" style="background:#f0e8ff;">🤖</div>
+      </div>
+      <div class="cert-card" style="cursor:default">
+        <div class="cert-icon aws">✨</div>
         <div>
-          <div class="cert-name">Anthropic Claude 101</div>
-          <div class="cert-sub">Certified · Anthropic · View certificate ↗</div>
+          <div class="cert-name">AWS AI Practitioner</div>
+          <div class="cert-sub">AIF-C01 · Amazon Web Services</div>
         </div>
-      </a>
-      <div class="cert-card" style="background:var(--off);border-style:dashed;cursor:default">
-        <div class="cert-icon" style="background:var(--border);font-size:18px;font-weight:700;color:var(--muted)">+</div>
+      </div>
+      <div class="cert-card" onclick="showPage('certifications')" style="cursor:pointer">
+        <div class="cert-icon" style="background:var(--bg);font-size:18px;font-weight:700;color:var(--muted)">+3</div>
         <div>
-          <div class="cert-name" style="color:var(--muted)">Next up</div>
-          <div class="cert-sub">CKA or GCP Professional Cloud Architect</div>
+          <div class="cert-name" style="color:var(--accent)">View all 6 certifications →</div>
+          <div class="cert-sub">AWS Gen AI · Amazon Connect · Lean Six Sigma</div>
         </div>
       </div>
     </div>
@@ -549,18 +487,18 @@
       <div class="overline">random facts</div>
       <div class="facts-2col">
         <div>
-          <div class="fact-item">I've been building cloud systems since before AWS launched EC2</div>
-          <div class="fact-item">I think Terraform state files are an underrated security risk</div>
-          <div class="fact-item">I've migrated databases at 2am so users never noticed</div>
+          <div class="fact-item">I've reduced misrouted transfers by 25% at a Canadian Big 6 bank</div>
+          <div class="fact-item">I cut agent screen-load time from 45 seconds to under 8 seconds</div>
+          <div class="fact-item">I've migrated 8+ Genesys contact flows into Amazon Connect</div>
           <div class="fact-item">Ottawa winters make me a more productive engineer</div>
-          <div class="fact-item">kubectl is the command I type most in any given day</div>
+          <div class="fact-item">I believe IVR should solve problems, not create them</div>
         </div>
         <div>
-          <div class="fact-item">I hold an MSc from Osmania University, Hyderabad</div>
-          <div class="fact-item">I believe GitOps is the right way to do deployments</div>
-          <div class="fact-item">I've worked across India and Canada — two very different cloud cultures</div>
-          <div class="fact-item">I read AWS architecture blogs the way others read news</div>
-          <div class="fact-item">My dashboards always use Grafana</div>
+          <div class="fact-item">I hold a PGDM from Durham College and an MSc from Osmania University</div>
+          <div class="fact-item">I've worked across banking, telecom, insurance, and BPO environments</div>
+          <div class="fact-item">I've operated contact centers in both India and Canada</div>
+          <div class="fact-item">Contact Lens is the most underused tool in most Amazon Connect deployments</div>
+          <div class="fact-item">My Cyara test suites cover positive, negative, timeout, and error paths</div>
         </div>
       </div>
     </div>
@@ -570,56 +508,48 @@
   <div class="bg-off">
     <div class="wrap">
       <div class="overline">experience</div>
-      <h2 class="sec-h2">7 years. 4 employers.<br>2 countries.</h2>
+      <h2 class="sec-h2">8 years. 3 employers.<br>2 countries.</h2>
       <div class="timeline">
+
         <div class="tl-item">
-          <div class="tl-date">Jan 2025 — Present<div class="tl-now">Current</div></div>
+          <div class="tl-date">Dec 2024 — Present<div class="tl-now">Current</div></div>
           <div>
-            <div class="tl-role">Azure DevOps Engineer</div>
+            <div class="tl-role">Senior Amazon Connect Developer</div>
             <div class="tl-co">National Bank of Canada · Ottawa, ON</div>
-            <div class="tl-desc">Led enterprise cloud migration from on-prem to Azure. Built and managed AKS clusters for containerised microservices. Designed YAML-based CI/CD pipelines achieving zero-downtime deployment. Implemented Azure AD Connect, ADFS, NSGs, Private Endpoints, and Key Encryption Keys for enterprise-grade security and compliance.</div>
+            <div class="tl-desc">Designing and developing Amazon Connect contact flows, IVR logic, queues, routing profiles, and callback flows for banking support journeys. Built Salesforce Service Cloud Voice CTI integration for automated screen-pop and interaction logging. Developed Amazon Lex voice bots for self-service banking intents. Monitoring with CloudWatch, Splunk, and Contact Lens. IaC and CI/CD via CloudFormation, Terraform, and Jenkins.</div>
             <div class="tl-tags">
-              <span class="tl-tag">Azure</span><span class="tl-tag">AKS</span><span class="tl-tag">Terraform</span>
-              <span class="tl-tag">ARM Templates</span><span class="tl-tag">Azure DevOps</span><span class="tl-tag">AD Connect</span><span class="tl-tag">PowerShell</span>
+              <span class="tl-tag">Amazon Connect</span><span class="tl-tag">AWS Lambda</span><span class="tl-tag">Amazon Lex</span>
+              <span class="tl-tag">Salesforce SCV</span><span class="tl-tag">Contact Lens</span><span class="tl-tag">Splunk</span><span class="tl-tag">CloudFormation</span>
             </div>
           </div>
         </div>
+
         <div class="tl-item">
-          <div class="tl-date">Jan 2023 — Dec 2024</div>
+          <div class="tl-date">July 2020 — Aug 2023</div>
           <div>
-            <div class="tl-role">AWS DevOps Engineer</div>
-            <div class="tl-co">Intact Insurance · Ottawa, ON</div>
-            <div class="tl-desc">Architected AWS cloud infra including EC2, VPC, S3, RDS, IAM with full HIPAA and SOC 2 compliance. Built CodePipeline CI/CD, serverless Lambda + API Gateway workflows, ELB + Auto Scaling, and migrated on-prem workloads using SMS, DMS, and Snowball with minimal downtime.</div>
-            <div class="tl-tags">
-              <span class="tl-tag">AWS</span><span class="tl-tag">EKS</span><span class="tl-tag">Lambda</span>
-              <span class="tl-tag">CodePipeline</span><span class="tl-tag">Ansible</span><span class="tl-tag">CloudWatch</span><span class="tl-tag">HIPAA</span>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Aug 2019 — Nov 2022</div>
-          <div>
-            <div class="tl-role">DevOps Engineer</div>
-            <div class="tl-co">Genpact / Mahindra Finance · Mumbai, India</div>
-            <div class="tl-desc">Built Kubernetes + OpenShift + Helm microservices platforms for BFSI workloads. Architected Azure Data Factory pipelines for analytics reporting. Jenkins + Docker CI/CD for enterprise delivery. Configured Jira workflows and Docker Slave Nodes for DevOps governance at scale.</div>
-            <div class="tl-tags">
-              <span class="tl-tag">Kubernetes</span><span class="tl-tag">OpenShift</span><span class="tl-tag">Helm</span>
-              <span class="tl-tag">Azure Data Factory</span><span class="tl-tag">Jenkins</span><span class="tl-tag">Docker</span>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Jan 2017 — May 2019</div>
-          <div>
-            <div class="tl-role">Cloud Engineer</div>
+            <div class="tl-role">Cloud Contact Center Engineer</div>
             <div class="tl-co">Jio · Mumbai, India</div>
-            <div class="tl-desc">Built CI/CD pipelines for 100+ microservices at telecom scale using Jenkins, Gradle, and Bitbucket. Kubernetes + ECS + Helm orchestration, Prometheus + Grafana observability stack, AWS Lambda / EC2 / S3 / Route 53 with cross-region routing and security controls.</div>
+            <div class="tl-desc">Started in Genesys Cloud CX operations (2020–2021), then led the Genesys-to-Amazon Connect migration (2021–2023). Redesigned 8+ Genesys contact flows into Amazon Connect, built Lex-powered self-service IVR journeys, integrated Salesforce CRM via REST APIs, and validated all journeys with Cyara before go-live. Achieved 18–22% call deflection on targeted intents.</div>
             <div class="tl-tags">
-              <span class="tl-tag">AWS</span><span class="tl-tag">ECS</span><span class="tl-tag">Kubernetes</span>
-              <span class="tl-tag">Prometheus</span><span class="tl-tag">Grafana</span><span class="tl-tag">Jenkins</span><span class="tl-tag">Bitbucket</span>
+              <span class="tl-tag">Amazon Connect</span><span class="tl-tag">Genesys Cloud CX</span><span class="tl-tag">Amazon Lex</span>
+              <span class="tl-tag">Cyara</span><span class="tl-tag">Salesforce</span><span class="tl-tag">Terraform</span><span class="tl-tag">Jenkins</span>
             </div>
           </div>
         </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jan 2017 — May 2020</div>
+          <div>
+            <div class="tl-role">Contact Center Engineer</div>
+            <div class="tl-co">Genpact · Hyderabad, India</div>
+            <div class="tl-desc">Supported multi-platform BPO contact center environments across Genesys Cloud CX, Aspect Unified IP, NICE, and Avaya Aura for banking, telecom, insurance, and collections operations. Integrated platforms with Salesforce and ServiceNow via REST APIs. Built Power BI and Grafana dashboards for SLA, AHT, CSAT, and call volume. Delivered Axis Bank collections and Max Life Insurance policy support programs.</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Genesys Cloud CX</span><span class="tl-tag">Avaya Aura</span><span class="tl-tag">Aspect Dialer</span>
+              <span class="tl-tag">NICE</span><span class="tl-tag">Salesforce</span><span class="tl-tag">ServiceNow</span><span class="tl-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -634,7 +564,7 @@
       <div>
         <div class="eyebrow">Selected work · 2017–2025</div>
         <h1 class="hero-h1">portfolio.</h1>
-        <p class="hero-p">Real deliverables from 7+ years across finance, insurance, and telecom. Each case study covers the problem, architecture decisions, and outcome.</p>
+        <p class="hero-p">Real contact center deliverables from 8+ years across banking, telecom, insurance, and BPO. Each case study covers the problem, architecture decisions, and measurable outcome.</p>
       </div>
     </div>
   </div>
@@ -642,105 +572,79 @@
     <div class="port-grid">
 
       <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
+        <div class="card-thumb" style="background:#fff0dc">
+          <span class="thumb-label" style="color:#8a4500;opacity:.3">IVR</span>
+          <span class="badge b-connect">Amazon Connect · Current</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">National Bank — Intelligent IVR Modernization</div>
+          <div class="card-desc">Dynamic contact flows with real-time Lambda-based customer lookup, contact attribute routing, Contact Lens analytics, and Splunk alerting. Reduced misrouted transfers by ~25% and screen-load from 45s to under 8s.</div>
+          <div class="card-meta">National Bank of Canada · Ottawa · 2024–2025 · Banking</div>
+          <div class="card-cta">Read case study →</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
         <div class="card-thumb" style="background:#deeafa">
-          <span class="thumb-label" style="color:#0052a3;opacity:.3">AKS</span>
-          <span class="badge b-azure">Azure · Current</span>
+          <span class="thumb-label" style="color:#0052a3;opacity:.3">SCV</span>
+          <span class="badge b-sfdc">Salesforce SCV</span>
         </div>
         <div class="card-body">
-          <div class="card-title">National Bank — AKS Platform Migration</div>
-          <div class="card-desc">Zero-downtime migration to Azure Kubernetes Service with YAML-based CI/CD, NSG security, Private Endpoints, and Azure AD identity integration for a Canadian Big 6 bank.</div>
-          <div class="card-meta">National Bank · Ottawa · 2025 · Finance</div>
-          <div class="card-cta">Read case study →</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
-        <div class="card-thumb" style="background:#dcf0e8">
-          <span class="thumb-label" style="color:#14532d;opacity:.3">IaC</span>
-          <span class="badge b-tf">Terraform</span>
-        </div>
-        <div class="card-body">
-          <div class="card-title">Enterprise IaC Governance Framework</div>
-          <div class="card-desc">Terraform + ARM modules for VMs, AKS, networking, storage, and Key Encryption Keys. Full Azure governance with automated provisioning and compliance guardrails.</div>
-          <div class="card-meta">National Bank · Ottawa · 2025</div>
-          <div class="card-cta">Read case study →</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
-        <div class="card-thumb" style="background:#fff0dc">
-          <span class="thumb-label" style="color:#8a4500;opacity:.3">AWS</span>
-          <span class="badge b-aws">AWS Migration</span>
-        </div>
-        <div class="card-body">
-          <div class="card-title">Intact Insurance — On-Prem to AWS</div>
-          <div class="card-desc">Lift-and-shift of insurance workloads from on-prem to AWS using SMS, DMS, and Snowball. Minimal downtime, full data integrity, HIPAA and regulatory compliance maintained throughout.</div>
-          <div class="card-meta">Intact Insurance · Ottawa · 2023–2024</div>
-          <div class="card-cta">Read case study →</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
-        <div class="card-thumb" style="background:#fff0dc">
-          <span class="thumb-label" style="color:#8a4500;opacity:.3">λ</span>
-          <span class="badge b-aws">Serverless</span>
-        </div>
-        <div class="card-body">
-          <div class="card-title">Serverless Event-Driven Pipeline</div>
-          <div class="card-desc">Lambda + API Gateway backend replacing manual ops workflows. Event-driven data ingestion and backend automation with zero infrastructure overhead and reduced latency.</div>
-          <div class="card-meta">Intact Insurance · Ottawa · 2024</div>
+          <div class="card-title">CRM Integration &amp; AI Customer Automation</div>
+          <div class="card-desc">End-to-end Salesforce Service Cloud Voice CTI integration — screen-pop, automated interaction logging, case creation, and Lex-based self-service journeys. Improved agent productivity by ~35% and cut manual follow-up by ~40%.</div>
+          <div class="card-meta">National Bank of Canada · Ottawa · 2025</div>
           <div class="card-cta">Read case study →</div>
         </div>
       </a>
 
       <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
         <div class="card-thumb" style="background:#ede9fe">
-          <span class="thumb-label" style="color:#4c1d95;opacity:.3">K8s</span>
-          <span class="badge b-k8s">Kubernetes</span>
+          <span class="thumb-label" style="color:#4c1d95;opacity:.3">Lex</span>
+          <span class="badge b-lex">Conversational AI</span>
         </div>
         <div class="card-body">
-          <div class="card-title">Mahindra Finance Microservices Platform</div>
-          <div class="card-desc">Kubernetes + OpenShift + Helm for enterprise BFSI workloads. Docker Swarm → K8s migration, high availability, load balancing, and fully automated deploy pipelines.</div>
-          <div class="card-meta">Genpact / Mahindra Finance · Mumbai · 2022</div>
-          <div class="card-cta">Read case study →</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
-        <div class="card-thumb" style="background:#ffe4e4">
-          <span class="thumb-label" style="color:#7f1d1d;opacity:.3;font-size:36px;">🔒</span>
-          <span class="badge b-sec">DevSecOps</span>
-        </div>
-        <div class="card-body">
-          <div class="card-title">HIPAA-Compliant AWS Platform</div>
-          <div class="card-desc">IAM policies, MFA enforcement, CloudTrail + GuardDuty, and SOC 2 audit trail for healthcare data. Checkmarx and Snyk shift-left security integrated into every pipeline.</div>
-          <div class="card-meta">Intact Insurance · Ottawa · 2023</div>
-          <div class="card-cta">Read case study →</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
-        <div class="card-thumb" style="background:#fff0dc">
-          <span class="thumb-label" style="color:#8a4500;opacity:.3">Jio</span>
-          <span class="badge b-aws">ECS · K8s</span>
-        </div>
-        <div class="card-body">
-          <div class="card-title">Telecom Microservices at Scale — Jio</div>
-          <div class="card-desc">CI/CD for 100+ microservices at India's largest telecom using Jenkins + Bitbucket + Kubernetes. Helm charts, container replicas, Prometheus/Grafana observability stack.</div>
-          <div class="card-meta">Jio · Mumbai · 2018–2019</div>
+          <div class="card-title">Amazon Lex Self-Service Automation — Jio</div>
+          <div class="card-desc">Lex-powered IVR for loan status, EMI schedule, and payment confirmation. Lambda fulfillment, structured fallback, and full Cyara coverage across positive, negative, timeout, and error paths. 18–22% call deflection on targeted intents.</div>
+          <div class="card-meta">Jio · Mumbai · 2021–2023</div>
           <div class="card-cta">Read case study →</div>
         </div>
       </a>
 
       <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
         <div class="card-thumb" style="background:#dcf0e8">
-          <span class="thumb-label" style="color:#14532d;opacity:.3">ADF</span>
-          <span class="badge b-tf">Azure Data</span>
+          <span class="thumb-label" style="color:#14532d;opacity:.3">CCaaS</span>
+          <span class="badge b-genesys">Migration</span>
         </div>
         <div class="card-body">
-          <div class="card-title">Data Pipeline Automation — Mahindra</div>
-          <div class="card-desc">Azure Data Factory + SQL Data Warehouse for analytics at Mahindra Finance. End-to-end ingestion, transformation, and reporting pipelines for BFSI decision-making.</div>
-          <div class="card-meta">Genpact · Mumbai · 2021</div>
+          <div class="card-title">Genesys Cloud CX → Amazon Connect Migration</div>
+          <div class="card-desc">Full CCaaS migration — analyzed Genesys IVR flows, routing, queues, and integrations, then redesigned and deployed in Amazon Connect with Salesforce CRM, CloudFormation/Terraform IaC, and Jenkins CI/CD. Replaced a 4–6 week vendor change cycle with hours.</div>
+          <div class="card-meta">Jio · Mumbai · 2021–2022</div>
+          <div class="card-cta">Read case study →</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
+        <div class="card-thumb" style="background:#fff0dc">
+          <span class="thumb-label" style="color:#8a4500;opacity:.3">BPO</span>
+          <span class="badge b-aws">Collections · BPO</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Axis Bank Collections Contact Center</div>
+          <div class="card-desc">Multi-platform BPO environment supporting personal loan, credit card, and home loan collections. Aspect outbound dialer, Genesys Cloud CX, Avaya Aura IVR/ACD, and Salesforce/ServiceNow integration. Improved SLA compliance by ~35%.</div>
+          <div class="card-meta">Genpact · Hyderabad · 2019–2020 · Finance / Collections</div>
+          <div class="card-cta">Read case study →</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="port-card">
+        <div class="card-thumb" style="background:#ffe4e4">
+          <span class="thumb-label" style="color:#7f1d1d;opacity:.3">📋</span>
+          <span class="badge b-migration">Insurance</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Max Life Insurance Policy Support Center</div>
+          <div class="card-desc">Inbound/outbound contact center for policy issuance, renewals, and premium inquiries. Avaya Aura IVR/ACD, Genesys/NICE recording, Salesforce screen-pop, and ServiceNow ticketing. Reduced routine agent-handled inquiries by ~18% through IVR self-service.</div>
+          <div class="card-meta">Genpact · Hyderabad · 2017–2019 · Insurance</div>
           <div class="card-cta">Read case study →</div>
         </div>
       </a>
@@ -757,7 +661,7 @@
       <div>
         <div class="eyebrow">Open-source · GitHub · Free to use</div>
         <h1 class="hero-h1">projects.</h1>
-        <p class="hero-p">Tools, templates, and reference architectures built from real production experience. Clone, fork, and use them freely.</p>
+        <p class="hero-p">Contact center tools, IVR templates, and reference architectures built from real production experience. Clone, fork, and use them freely.</p>
       </div>
     </div>
   </div>
@@ -765,9 +669,9 @@
     <div class="proj-grid">
 
       <div class="proj-card">
-        <span class="proj-badge b-tf">Terraform</span>
-        <div class="proj-title">Azure Landing Zone Modules</div>
-        <div class="proj-desc">Reusable Terraform modules for AKS, VNet, NSG, Key Vault, and storage. Based on real National Bank of Canada deployment patterns. Production-tested.</div>
+        <span class="proj-badge b-connect">Amazon Connect</span>
+        <div class="proj-title">Amazon Connect IVR Flow Templates</div>
+        <div class="proj-desc">Reusable contact flow templates for banking journeys — account inquiry, card support, callbacks, escalations. Includes routing profiles, queues, and contact attribute patterns. Production-tested at National Bank.</div>
         <div class="proj-meta">GitHub · cloud5ence repo</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -776,10 +680,10 @@
       </div>
 
       <div class="proj-card">
-        <span class="proj-badge b-azure">Azure DevOps</span>
-        <div class="proj-title">YAML Pipeline Library</div>
-        <div class="proj-desc">Reusable pipeline templates for AKS deployment, Terraform plan/apply, Docker build + push, and automated rollback. Drop-in templates for any Azure DevOps project.</div>
-        <div class="proj-meta">GitHub · Template repository</div>
+        <span class="proj-badge b-lex">Conversational AI</span>
+        <div class="proj-title">Amazon Lex Self-Service Starter Kit</div>
+        <div class="proj-desc">Lex bot definitions for common banking intents — loan status, EMI schedule, payment confirmation — with Lambda fulfillment, fallback logic, and Cyara test suite included. Validated against 18–22% call deflection targets.</div>
+        <div class="proj-meta">GitHub · Node.js / Python</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           View on GitHub
@@ -787,9 +691,20 @@
       </div>
 
       <div class="proj-card">
-        <span class="proj-badge b-aws">AWS</span>
-        <div class="proj-title">AWS Migration Runbook</div>
-        <div class="proj-desc">Step-by-step Terraform + CLI runbook for on-prem to AWS lift-and-shift using SMS, DMS, and Snowball. Validated against the Intact Insurance production migration.</div>
+        <span class="proj-badge b-sfdc">Salesforce SCV</span>
+        <div class="proj-title">Salesforce Service Cloud Voice Integration</div>
+        <div class="proj-desc">Reference implementation for Amazon Connect + Salesforce SCV — REST API screen-pop, OAuth setup, webhook-based interaction logging, case creation, and post-call processing via Lambda and API Gateway.</div>
+        <div class="proj-meta">GitHub · Node.js · Open-source</div>
+        <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="proj-card">
+        <span class="proj-badge b-genesys">Migration</span>
+        <div class="proj-title">Genesys → Amazon Connect Migration Runbook</div>
+        <div class="proj-desc">Step-by-step migration guide — IVR flow mapping, contact attribute translation, routing profile redesign, integration checklist, and post-go-live hypercare runbook. Validated against the Jio production migration.</div>
         <div class="proj-meta">GitHub · Open-source</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -798,10 +713,10 @@
       </div>
 
       <div class="proj-card">
-        <span class="proj-badge b-k8s">Kubernetes</span>
-        <div class="proj-title">K8s Security Baseline</div>
-        <div class="proj-desc">OPA Gatekeeper policies + Falco rules for hardened EKS/AKS clusters. HIPAA and SOC 2 aligned out of the box. Tested against production Canadian regulated workloads.</div>
-        <div class="proj-meta">GitHub · DevSecOps starter</div>
+        <span class="proj-badge" style="background:#ffe4e4;color:#7f1d1d">Monitoring</span>
+        <div class="proj-title">Amazon Connect Monitoring Toolkit</div>
+        <div class="proj-desc">CloudWatch dashboards, Splunk alert templates, and Contact Lens rules for proactive detection of contact flow failures, Lambda errors, routing anomalies, and SLA breaches. Reduces repeat incidents by ~30%.</div>
+        <div class="proj-meta">GitHub · CloudWatch / Splunk</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           View on GitHub
@@ -809,32 +724,21 @@
       </div>
 
       <div class="proj-card">
-        <span class="proj-badge" style="background:#ffe4e4;color:#7f1d1d">Observability</span>
-        <div class="proj-title">Prometheus + Grafana Stack</div>
-        <div class="proj-desc">Docker Compose + Helm chart for a production-ready Prometheus / Grafana / Alertmanager stack with pre-built Kubernetes dashboards. One command to spin up.</div>
-        <div class="proj-meta">GitHub · Quick-start kit</div>
+        <span class="proj-badge b-aws">IaC</span>
+        <div class="proj-title">Amazon Connect CloudFormation Templates</div>
+        <div class="proj-desc">CloudFormation and Terraform templates for provisioning Amazon Connect instances, Lambda integrations, DynamoDB tables, Kinesis streams, and S3 buckets with correct IAM roles. Promotes changes through dev → UAT → prod.</div>
+        <div class="proj-meta">GitHub · CloudFormation / Terraform</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           View on GitHub
         </a>
       </div>
 
-      <div class="proj-card">
-        <span class="proj-badge b-aws">FinOps</span>
-        <div class="proj-title">AWS Cost Alert Lambda</div>
-        <div class="proj-desc">Python Lambda + boto3 that queries Cost Explorer daily and posts spend anomaly alerts to Slack. Zero infrastructure cost to run. Catches surprise bills before they land.</div>
-        <div class="proj-meta">GitHub · Python · Open-source</div>
-        <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          View on GitHub
-        </a>
-      </div>
-
-      <!-- This website itself as a project -->
+      <!-- This website itself -->
       <div class="proj-card" style="border-color:var(--accent);border-width:2px">
-        <span class="proj-badge b-azure">This site</span>
+        <span class="proj-badge b-sfdc">This site</span>
         <div class="proj-title">Cloud5ence.com — The Site You're On</div>
-        <div class="proj-desc">This website is itself a DevOps project. HTML/CSS/JS → GitHub → GitHub Actions CI/CD → S3 + CloudFront + Route 53. Full Terraform IaC. ~$0.55/month to run.</div>
+        <div class="proj-desc">This website is itself a project. HTML/CSS/JS → GitHub → GitHub Actions CI/CD → S3 + CloudFront + Route 53. Full Terraform IaC. ~$0.55/month to run. Built and maintained by a CCaaS engineer who also knows his way around AWS infrastructure.</div>
         <div class="proj-meta">Live project · Documented in repo</div>
         <a href="https://github.com/VinodKumarDhanavath/Cloud5ence" target="_blank" rel="noopener" class="gh-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -854,7 +758,7 @@
       <div>
         <div class="eyebrow">Verified · Industry-recognised</div>
         <h1 class="hero-h1">certifications.</h1>
-        <p class="hero-p">Professional certifications across AWS, Azure, and AI — validating 7+ years of hands-on cloud and DevOps engineering.</p>
+        <p class="hero-p">Six professional certifications across AWS cloud, AI, and contact center engineering — validating 8+ years of hands-on CCaaS and serverless delivery.</p>
       </div>
     </div>
   </div>
@@ -865,131 +769,98 @@
     <div class="overline">earned</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px">
 
-      <!-- AWS -->
+      <!-- AWS Solutions Architect -->
       <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="position:relative;height:200px;background:#fff0dc;display:flex;align-items:center;justify-content:center;overflow:hidden">
-          <!-- Badge image — replace src with your actual badge when ready -->
-          <img src="aws-cert-badge.png"
-               onerror="this.style.display='none';document.getElementById('aws-ph').style.display='flex';"
-               style="width:120px;height:120px;object-fit:contain;z-index:2;position:relative"
-               alt="AWS Certified DevOps Engineer badge">
-          <!-- Placeholder shown until badge image is added -->
-          <div id="aws-ph" style="display:flex;flex-direction:column;align-items:center;gap:10px">
-            <div style="font-size:52px;opacity:.25">☁️</div>
-            <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center">Badge image<br>coming soon</div>
-          </div>
-          <!-- Coming soon overlay ribbon -->
-          <div style="position:absolute;top:14px;right:-28px;background:#1c1c1c;color:#fff;font-size:10px;font-weight:600;letter-spacing:1px;padding:5px 36px;transform:rotate(45deg);text-transform:uppercase">Soon</div>
+        <div style="height:200px;background:#fff0dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">☁️</div>
+          <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">AWS Certified</div>
         </div>
         <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">AWS Certified DevOps Engineer</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Professional · Amazon Web Services</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">AWS Solutions Architect</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Associate · Amazon Web Services</div>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
             <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">AWS</span>
-            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">DevOps</span>
-            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">Professional</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Azure -->
-      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="position:relative;height:200px;background:#deeafa;display:flex;align-items:center;justify-content:center;overflow:hidden">
-          <img src="azure-cert-badge.png"
-               onerror="this.style.display='none';document.getElementById('az-ph').style.display='flex';"
-               style="width:120px;height:120px;object-fit:contain;z-index:2;position:relative"
-               alt="Microsoft Certified DevOps Engineer badge">
-          <div id="az-ph" style="display:flex;flex-direction:column;align-items:center;gap:10px">
-            <div style="font-size:52px;opacity:.25">🔷</div>
-            <div style="font-size:11px;color:#0052a3;font-weight:600;letter-spacing:.5px;text-align:center">Badge image<br>coming soon</div>
-          </div>
-          <div style="position:absolute;top:14px;right:-28px;background:#1c1c1c;color:#fff;font-size:10px;font-weight:600;letter-spacing:1px;padding:5px 36px;transform:rotate(45deg);text-transform:uppercase">Soon</div>
-        </div>
-        <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">Microsoft Certified</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">DevOps Engineer Expert · AZ-400</div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <span style="font-size:11px;padding:3px 10px;background:#deeafa;color:#0052a3;border-radius:3px;font-weight:500">Azure</span>
-            <span style="font-size:11px;padding:3px 10px;background:#deeafa;color:#0052a3;border-radius:3px;font-weight:500">AZ-400</span>
-            <span style="font-size:11px;padding:3px 10px;background:#deeafa;color:#0052a3;border-radius:3px;font-weight:500">Expert</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Claude 101 -->
-      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="position:relative;height:200px;background:#f0e8ff;display:flex;align-items:center;justify-content:center;overflow:hidden">
-          <img src="Claud101_Cert.pdf"
-               onerror="this.style.display='none';document.getElementById('cl-ph').style.display='flex';"
-               style="width:120px;height:120px;object-fit:contain;z-index:2;position:relative"
-               alt="Anthropic Claude 101 certificate">
-          <div id="cl-ph" style="display:flex;flex-direction:column;align-items:center;gap:10px">
-            <div style="font-size:52px;opacity:.3">🤖</div>
-            <div style="font-size:11px;color:#5b21b6;font-weight:600;letter-spacing:.5px;text-align:center">View certificate ↗</div>
-          </div>
-          <!-- No "coming soon" — this one is ready, so link it -->
-        </div>
-        <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">Anthropic Claude 101</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Certified · Anthropic · <a href="Claud101_Cert.pdf" target="_blank" rel="noopener" style="color:#0057b8">View certificate ↗</a></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <span style="font-size:11px;padding:3px 10px;background:#f0e8ff;color:#5b21b6;border-radius:3px;font-weight:500">AI</span>
-            <span style="font-size:11px;padding:3px 10px;background:#f0e8ff;color:#5b21b6;border-radius:3px;font-weight:500">Anthropic</span>
             <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
           </div>
         </div>
       </div>
 
-    </div>
-
-    <!-- In progress / next up -->
-    <div class="overline">in progress</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-
-      <!-- CKA -->
-      <div style="border:1.5px dashed var(--border);border-radius:12px;overflow:hidden;background:var(--off)">
-        <div style="height:200px;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
-          <div style="font-size:44px;opacity:.2">⚙️</div>
-          <div style="font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">In progress</div>
+      <!-- AWS Machine Learning -->
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:200px;background:#fff0dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">🤖</div>
+          <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">AWS Certified</div>
         </div>
         <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">Certified Kubernetes Administrator</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">CKA · Cloud Native Computing Foundation</div>
-          <div style="display:flex;gap:8px">
-            <span style="font-size:11px;padding:3px 10px;background:var(--bg);color:#5a5a5a;border-radius:3px;font-weight:500">Kubernetes</span>
-            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">2025</span>
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">AWS Machine Learning</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Associate · Amazon Web Services</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">AWS</span>
+            <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
           </div>
         </div>
       </div>
 
-      <!-- GCP -->
-      <div style="border:1.5px dashed var(--border);border-radius:12px;overflow:hidden;background:var(--off)">
-        <div style="height:200px;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
-          <div style="font-size:44px;opacity:.2">☁️</div>
-          <div style="font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">Planned</div>
+      <!-- AWS AI Practitioner -->
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:200px;background:#fff0dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">✨</div>
+          <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">AWS Certified</div>
         </div>
         <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">GCP Professional Cloud Architect</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Professional · Google Cloud</div>
-          <div style="display:flex;gap:8px">
-            <span style="font-size:11px;padding:3px 10px;background:#fce8ff;color:#5b21b6;border-radius:3px;font-weight:500">GCP</span>
-            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">2025</span>
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">AWS AI Practitioner</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">AIF-C01 · Amazon Web Services</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">AWS · AI</span>
+            <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
           </div>
         </div>
       </div>
 
-      <!-- HashiCorp Terraform -->
-      <div style="border:1.5px dashed var(--border);border-radius:12px;overflow:hidden;background:var(--off)">
-        <div style="height:200px;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
-          <div style="font-size:44px;opacity:.2">🏗️</div>
-          <div style="font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">Planned</div>
+      <!-- AWS Generative AI -->
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:200px;background:#fff0dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">🧠</div>
+          <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">AWS</div>
         </div>
         <div style="padding:20px 22px">
-          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">HashiCorp Terraform Associate</div>
-          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">003 · HashiCorp</div>
-          <div style="display:flex;gap:8px">
-            <span style="font-size:11px;padding:3px 10px;background:#dcf0e8;color:#14532d;border-radius:3px;font-weight:500">Terraform</span>
-            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">2025</span>
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">AWS Generative AI</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Trained and Tested · Amazon Web Services</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">Gen AI</span>
+            <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amazon Connect Implementation -->
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:200px;background:#fff0dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">📞</div>
+          <div style="font-size:11px;color:#8a4500;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">Amazon Connect</div>
+        </div>
+        <div style="padding:20px 22px">
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">Amazon Connect</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Implementation Training · AWS</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:3px 10px;background:#fff0dc;color:#8a4500;border-radius:3px;font-weight:500">CCaaS</span>
+            <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lean Six Sigma -->
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,.07)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:200px;background:#dcf0e8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="font-size:52px;opacity:.35">🟢</div>
+          <div style="font-size:11px;color:#14532d;font-weight:600;letter-spacing:.5px;text-align:center;text-transform:uppercase">Lean Six Sigma</div>
+        </div>
+        <div style="padding:20px 22px">
+          <div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:-.2px">Lean Six Sigma</div>
+          <div style="font-size:13px;color:#5a5a5a;margin-bottom:14px">Green Belt · Process Improvement</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:3px 10px;background:#dcf0e8;color:#14532d;border-radius:3px;font-weight:500">Six Sigma</span>
+            <span style="font-size:11px;padding:3px 10px;background:#dcf5e9;color:#1a7a47;border-radius:3px;font-weight:500">✓ Earned</span>
           </div>
         </div>
       </div>
@@ -1001,7 +872,7 @@
       <div style="font-size:24px">💡</div>
       <div>
         <div style="font-size:14px;font-weight:500;color:var(--black);margin-bottom:3px">Badge images coming soon</div>
-        <div style="font-size:13px;color:#5a5a5a;line-height:1.6">Upload your official badge PNGs as <code style="background:var(--bg);padding:2px 6px;border-radius:3px;font-size:12px">aws-cert-badge.png</code> and <code style="background:var(--bg);padding:2px 6px;border-radius:3px;font-size:12px">azure-cert-badge.png</code> to the repo — they'll appear here automatically.</div>
+        <div style="font-size:13px;color:#5a5a5a;line-height:1.6">Upload your official badge PNGs to the repo — they'll appear here automatically. Credly links for verification can be added to each card.</div>
       </div>
     </div>
 
@@ -1014,9 +885,9 @@
   <div class="hero" style="min-height:unset">
     <div class="hero-inner" style="grid-template-columns:1fr;min-height:220px;padding:56px 48px 44px">
       <div>
-        <div class="eyebrow">DevOps · Cloud · Real lessons</div>
+        <div class="eyebrow">Amazon Connect · CCaaS · Real lessons</div>
         <h1 class="hero-h1">blog.</h1>
-        <p class="hero-p">Practical writing from 7+ years in the field — no fluff, no vendor marketing. Lessons from National Bank, Intact Insurance, Jio, and Mahindra Finance.</p>
+        <p class="hero-p">Practical writing from 8+ years in contact center engineering — no fluff, no vendor marketing. Lessons from National Bank, Jio, Genpact, and the Canadian regulated-industry market.</p>
       </div>
     </div>
   </div>
@@ -1026,9 +897,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">01</div>
         <div style="flex:1">
-          <div class="blog-title">How I migrated a Canadian bank's workloads to Azure AKS with zero downtime</div>
-          <div class="blog-excerpt">The planning, the gotchas, and the exact YAML pipeline structure we used at National Bank to deliver a zero-downtime AKS cutover. What the official docs don't cover.</div>
-          <div class="blog-tags"><span class="blog-tag">Azure</span><span class="blog-tag">AKS</span><span class="blog-tag">CI/CD</span><span class="blog-tag">Zero Downtime</span></div>
+          <div class="blog-title">How I reduced misrouted transfers by 25% at a Canadian bank using Amazon Connect</div>
+          <div class="blog-excerpt">The contact flow logic, Lambda-based customer segmentation, and Contact Lens rules that made it work. What the official AWS docs don't cover about real banking environments.</div>
+          <div class="blog-tags"><span class="blog-tag">Amazon Connect</span><span class="blog-tag">IVR Design</span><span class="blog-tag">Banking</span><span class="blog-tag">Lambda</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Apr 2025</div>
       </a>
@@ -1036,9 +907,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">02</div>
         <div style="flex:1">
-          <div class="blog-title">Terraform vs ARM templates on Azure: the honest answer after using both in production</div>
-          <div class="blog-excerpt">After using both at a Canadian Big 6 bank, here's the real breakdown — not the vendor answer. When ARM is actually the right choice and when it isn't.</div>
-          <div class="blog-tags"><span class="blog-tag">Terraform</span><span class="blog-tag">Azure</span><span class="blog-tag">IaC</span></div>
+          <div class="blog-title">Genesys Cloud CX to Amazon Connect: the migration checklist no one publishes</div>
+          <div class="blog-excerpt">After migrating 8+ contact flows at Jio, here's the actual checklist — IVR flow mapping, routing translation, integration gaps, Cyara test planning, and hypercare. What breaks and when.</div>
+          <div class="blog-tags"><span class="blog-tag">Migration</span><span class="blog-tag">Genesys</span><span class="blog-tag">Amazon Connect</span><span class="blog-tag">CCaaS</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Mar 2025</div>
       </a>
@@ -1046,9 +917,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">03</div>
         <div style="flex:1">
-          <div class="blog-title">On-premises to AWS in 8 weeks: what we learned migrating Intact Insurance</div>
-          <div class="blog-excerpt">Using SMS, DMS, and Snowball together — what the docs don't tell you about data integrity, network cutover timing, and keeping auditors happy during a live migration.</div>
-          <div class="blog-tags"><span class="blog-tag">AWS</span><span class="blog-tag">Migration</span><span class="blog-tag">DMS</span><span class="blog-tag">HIPAA</span></div>
+          <div class="blog-title">Salesforce Service Cloud Voice + Amazon Connect: the integration gotchas</div>
+          <div class="blog-excerpt">OAuth setup, REST API screen-pop timing, webhook event sequencing, and the edge cases that break in production but pass UAT. Lessons from a National Bank SCV deployment.</div>
+          <div class="blog-tags"><span class="blog-tag">Salesforce SCV</span><span class="blog-tag">Amazon Connect</span><span class="blog-tag">CTI</span><span class="blog-tag">OAuth</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Feb 2025</div>
       </a>
@@ -1056,9 +927,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">04</div>
         <div style="flex:1">
-          <div class="blog-title">Why your Terraform state file is a bigger security risk than you think</div>
-          <div class="blog-excerpt">Remote state, locking, secrets scanning — and the DriftDetect pattern that catches config drift before it reaches production. Lessons from 4 years of IaC at scale.</div>
-          <div class="blog-tags"><span class="blog-tag">Terraform</span><span class="blog-tag">Security</span><span class="blog-tag">IaC</span></div>
+          <div class="blog-title">Amazon Lex in banking: what 18–22% call deflection actually looks like</div>
+          <div class="blog-excerpt">The intents, the fallback logic, the confidence thresholds, and the Cyara test cases that got us there. Building Lex self-service for loan status, EMI schedule, and payment confirmation at Jio.</div>
+          <div class="blog-tags"><span class="blog-tag">Amazon Lex</span><span class="blog-tag">Self-Service</span><span class="blog-tag">Conversational AI</span><span class="blog-tag">Cyara</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Jan 2025</div>
       </a>
@@ -1066,9 +937,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">05</div>
         <div style="flex:1">
-          <div class="blog-title">HIPAA on AWS: the engineer's actual checklist — not the compliance template</div>
-          <div class="blog-excerpt">IAM policies, CloudTrail setup, GuardDuty alerts, and the audit trail checklist that got us SOC 2 compliant. The specific things nobody publishes.</div>
-          <div class="blog-tags"><span class="blog-tag">Security</span><span class="blog-tag">AWS</span><span class="blog-tag">HIPAA</span><span class="blog-tag">SOC 2</span></div>
+          <div class="blog-title">Contact Lens is the most underused tool in Amazon Connect — here's what it actually does</div>
+          <div class="blog-excerpt">Speech analytics, sentiment scoring, keyword detection, and repeat-issue analysis. The operational value of Contact Lens beyond the demo and how to wire it into your QA and monitoring workflows.</div>
+          <div class="blog-tags"><span class="blog-tag">Contact Lens</span><span class="blog-tag">Speech Analytics</span><span class="blog-tag">Amazon Connect</span><span class="blog-tag">QA</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Dec 2024</div>
       </a>
@@ -1078,7 +949,7 @@
         <div style="flex:1">
           <div class="blog-title">I built my personal website on AWS for $0.55/month — here's the full setup</div>
           <div class="blog-excerpt">S3 + CloudFront + Route 53 + ACM + GitHub Actions CI/CD + Terraform IaC. This site deploys in 60 seconds on every git push. Full architecture documented in the repo.</div>
-          <div class="blog-tags"><span class="blog-tag">AWS</span><span class="blog-tag">S3</span><span class="blog-tag">CloudFront</span><span class="blog-tag">Terraform</span><span class="blog-tag">CI/CD</span></div>
+          <div class="blog-tags"><span class="blog-tag">AWS</span><span class="blog-tag">S3</span><span class="blog-tag">CloudFront</span><span class="blog-tag">Terraform</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Nov 2024</div>
       </a>
@@ -1086,9 +957,9 @@
       <a href="#" onclick="return false;" class="blog-item" style="cursor:default;">
         <div class="blog-num">07</div>
         <div style="flex:1">
-          <div class="blog-title">Kubernetes at Jio: what 100+ microservices at telecom scale actually looks like</div>
-          <div class="blog-excerpt">Helm charts, replica management, Prometheus alerting, and the mistakes we made in the first six months. Real lessons from India's largest telecom operator.</div>
-          <div class="blog-tags"><span class="blog-tag">Kubernetes</span><span class="blog-tag">Helm</span><span class="blog-tag">Observability</span><span class="blog-tag">Scale</span></div>
+          <div class="blog-title">Amazon Connect at a Canadian bank: what PIPEDA and OSFI compliance actually means for your contact flows</div>
+          <div class="blog-excerpt">The PCI compliance requirements, data handling rules, and audit trail expectations that shape how you design IVR logic and Lambda integrations in a regulated Canadian banking environment.</div>
+          <div class="blog-tags"><span class="blog-tag">Compliance</span><span class="blog-tag">PIPEDA</span><span class="blog-tag">Banking</span><span class="blog-tag">Amazon Connect</span></div>
         </div>
         <div class="blog-date"><span style="background:#fff0dc;color:#8a4500;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;display:block;margin-bottom:4px;">Coming soon</span>Oct 2024</div>
       </a>
@@ -1114,18 +985,18 @@
       <!-- Left: info -->
       <div>
         <div class="avail-pill"><div class="avail-dot2"></div> Available · Ottawa, Canada</div>
-        <p class="contact-desc">Open to senior DevOps and Cloud Engineer roles in Ottawa or remote across Canada. Also available for consulting, architecture reviews, and freelance projects. AWS Professional + Azure Expert dual certification is rare in the Canadian regulated-industry market.</p>
+        <p class="contact-desc">Open to senior Amazon Connect Developer and CCaaS Engineer roles in Ottawa or remote across Canada. Also available for consulting, contact center architecture reviews, and CCaaS migration projects. 8+ years across banking, telecom, insurance, and BPO — including National Bank of Canada.</p>
 
-        <div class="ci-row"><span class="ci-label">Email</span><span class="ci-value"><a href="/cdn-cgi/l/email-protection#27714e49484309434f4649465146534f1713161f67404a464e4b0944484a"><span class="__cf_email__" data-cfemail="3c6a555253581258545d525d4a5d48540c080d047c5b515d5550125f5351">[email&#160;protected]</span></a></span></div>
+        <div class="ci-row"><span class="ci-label">Email</span><span class="ci-value"><a href="mailto:vinoddhanavath278@gmail.com">vinoddhanavath278@gmail.com</a></span></div>
         <div class="ci-row"><span class="ci-label">Location</span><span class="ci-value">Ottawa, Ontario, Canada</span></div>
-        <div class="ci-row"><span class="ci-label">Resume</span><span class="ci-value"><a href="Vinod Kumar Dhanavath New - DevOps.pdf" target="_blank" rel="noopener">Download CV (PDF) ↗</a></span></div>
-        <div class="ci-row"><span class="ci-label">LinkedIn</span><span class="ci-value"><a href="https://www.linkedin.com/in/vinod-kumar-dhanavath/" target="_blank" rel="noopener">linkedin.com/in/vinod-kumar-dhanavath</a></span></div>
+        <div class="ci-row"><span class="ci-label">Resume</span><span class="ci-value"><a href="Vinod_Kumar_Dhanavath_Resume_STYLED_v5.pdf" target="_blank" rel="noopener">Download CV (PDF) ↗</a></span></div>
+        <div class="ci-row"><span class="ci-label">LinkedIn</span><span class="ci-value"><a href="https://www.linkedin.com/in/vinodkdhanavath" target="_blank" rel="noopener">linkedin.com/in/vinodkdhanavath</a></span></div>
         <div class="ci-row"><span class="ci-label">GitHub</span><span class="ci-value"><a href="https://github.com/VinodKumarDhanavath" target="_blank" rel="noopener">github.com/VinodKumarDhanavath</a></span></div>
 
         <div class="hire-box">
           <div class="hire-h">Looking to hire?</div>
-          <p class="hire-p">AWS Certified DevOps Engineer (Professional) + Microsoft Certified DevOps Engineer Expert. 7+ years. Real Canadian banking (National Bank) and insurance (Intact) experience. Available immediately for the right role.</p>
-          <a class="btn-dark" href="/cdn-cgi/l/email-protection#b5e3dcdbdad19bd1ddd4dbd4c3d4c1dd8581848df5d2d8d4dcd99bd6dad88ac6c0d7dfd0d6c188fac5c5dac7c1c0dbdcc1cc908785d3dac7908785e3dcdbdad190878590f087908d85908c81908785f6d9dac0d180d0dbd6d0" style="margin-top:16px;font-size:13px;padding:10px 20px;display:inline-block;">Email me directly →</a>
+          <p class="hire-p">Senior Amazon Connect Developer with 8+ years across banking, telecom, insurance, and BPO. AWS Certified (Solutions Architect, ML Associate, AI Practitioner). Real Canadian banking experience at National Bank of Canada. Available for the right role.</p>
+          <a class="btn-dark" href="mailto:vinoddhanavath278@gmail.com" style="margin-top:16px;font-size:13px;padding:10px 20px;display:inline-block;">Email me directly →</a>
         </div>
       </div>
 
@@ -1151,9 +1022,10 @@
             <option value="">Select type...</option>
             <option>Full-time role</option>
             <option>Contract / consulting</option>
-            <option>Architecture review</option>
+            <option>CCaaS migration project</option>
+            <option>Contact center architecture review</option>
+            <option>Amazon Connect implementation</option>
             <option>Freelance project</option>
-            <option>Speaking invitation</option>
             <option>Other</option>
           </select>
         </div>
@@ -1177,17 +1049,17 @@
   <div class="hero" style="min-height:unset">
     <div class="hero-inner" style="grid-template-columns:1fr;min-height:200px;padding:56px 48px 44px">
       <div>
-        <div class="eyebrow">My journey · From Mumbai to Ottawa</div>
-        <h1 class="hero-h1">how I became a<br>DevOps engineer.</h1>
+        <div class="eyebrow">My journey · From Hyderabad to Ottawa</div>
+        <h1 class="hero-h1">how I became an<br>Amazon Connect engineer.</h1>
         <p style="font-size:15px;color:var(--body);line-height:1.7;max-width:540px;margin-top:12px">
-          A story about starting from scratch in India, learning on the job, moving countries, and building a career across AWS, Azure, and Kubernetes.
+          A story about starting in BPO contact centers in India, learning CCaaS platforms on the job, moving countries, and building a career across Genesys, Amazon Connect, and AWS serverless.
           <a href="#" onclick="showPage('about');return false;" style="color:var(--accent);margin-left:8px;font-size:13px">← Back to about</a>
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Photo strip repeated at top of article -->
+  <!-- Photo strip -->
   <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;max-width:1200px;margin:0 auto;padding:0 48px 40px">
     <div style="aspect-ratio:1;border-radius:6px;overflow:hidden"><img src="Ottawa.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Ottawa.jpg'" style="width:100%;height:100%;object-fit:cover"></div>
     <div style="aspect-ratio:1;border-radius:6px;overflow:hidden"><img src="Workspace.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Workspace.jpg'" style="width:100%;height:100%;object-fit:cover"></div>
@@ -1205,101 +1077,88 @@
       <img src="WebsitePotrait.png" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/WebsitePotrait.png'" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--border)">
       <div>
         <div style="font-size:14px;font-weight:500;color:var(--black)">Vinod Kumar Dhanavath</div>
-        <div style="font-size:12px;color:var(--muted)">DevOps & Cloud Engineer · Ottawa, Canada · 7 min read</div>
+        <div style="font-size:12px;color:var(--muted)">Amazon Connect Developer · CCaaS Engineer · Ottawa, Canada · 7 min read</div>
       </div>
     </div>
 
     <!-- Chapter 1 -->
-    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">The beginning — Hyderabad, 2014</h2>
+    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">The beginning — Hyderabad, 2017</h2>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:20px">
-      I grew up in Hyderabad, India, and graduated with an MSc from Osmania University in 2016. Like most engineering graduates, I had theoretical knowledge but no real-world experience with the tools that actually matter in industry.
+      I grew up in Hyderabad, India, and completed my MSc in Information Technology from Osmania University. My first role in 2017 was at Genpact — a large BPO — supporting contact center operations for banking, insurance, and telecom clients. I was working with Genesys Cloud CX, Avaya Aura, and NICE, often at the front line of production issues.
     </p>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
-      My first job at Jio in 2017 changed everything. I was thrown into a fast-moving telecom environment where we were deploying hundreds of microservices and the infrastructure had to scale to hundreds of millions of users. There was no time to learn slowly — you either figured it out or you didn't.
+      That BPO environment was intense. Regulated clients, strict SLAs, and the kind of pressure where a routing misconfiguration at 9am affects thousands of customers before lunch. It taught me to think about contact center systems not as configurations but as customer experiences that have to work every time.
     </p>
 
     <!-- Pull quote -->
     <div style="border-left:3px solid var(--black);padding:16px 24px;margin:0 0 40px;background:var(--off);border-radius:0 8px 8px 0">
-      <p style="font-family:'Outfit',sans-serif;font-size:19px;font-weight:700;color:var(--black);line-height:1.4;letter-spacing:-.2px">"There was no time to learn slowly — you either figured it out or you didn't."</p>
+      <p style="font-family:'Outfit',sans-serif;font-size:19px;font-weight:700;color:var(--black);line-height:1.4;letter-spacing:-.2px">"A routing misconfiguration at 9am affects thousands of customers before lunch."</p>
     </div>
 
     <!-- Chapter 2 -->
-    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">Learning the hard way — Jenkins at 2am</h2>
+    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">Moving to Jio — and discovering Amazon Connect</h2>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:20px">
-      At Jio I built my first real CI/CD pipelines using Jenkins, Gradle, and Bitbucket. We were running Kubernetes and ECS to orchestrate containers for microservices that served millions of users daily. I learned Prometheus and Grafana not from documentation but from debugging live production alerts at 2am.
+      In 2020 I joined Jio in Mumbai, initially supporting Genesys Cloud CX operations at scale. In 2021 I was pulled into the project that changed my career direction: a full CCaaS migration from Genesys Cloud CX to Amazon Connect.
     </p>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
-      That experience — being on call, owning deployments end to end, watching your pipeline fail in production — is worth more than any certification. It's where I really became a DevOps engineer.
+      Migrating 8+ production contact flows, rebuilding integrations in AWS Lambda and API Gateway, designing Lex-based self-service journeys, and validating every path with Cyara before go-live — that project taught me more about contact center architecture than anything I'd done before. We achieved 18–22% call deflection on targeted intents and reduced peak queue wait times by 20–25%.
     </p>
 
     <!-- Image feature -->
     <div style="border-radius:10px;overflow:hidden;margin-bottom:40px;border:1px solid var(--border)">
       <img src="working.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/working.jpg'" style="width:100%;height:280px;object-fit:cover;display:block" alt="Working">
-      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">The kind of late-night debugging sessions that shaped how I think about reliability</p></div>
+      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">The kind of deep-focus sessions that migrations demand — flow diagrams, Lambda logs, and Cyara test runs</p></div>
     </div>
 
     <!-- Chapter 3 -->
-    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">Growing up — Mahindra Finance & enterprise scale</h2>
-    <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:20px">
-      Moving to Genpact and Mahindra Finance was a different world — regulated BFSI workloads, compliance requirements, and the complexity of enterprise-scale Kubernetes on OpenShift. I started understanding that cloud engineering in finance is about much more than deployment speed. It's about governance, audit trails, and zero tolerance for downtime.
-    </p>
-    <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
-      This is where I first built Azure Data Factory pipelines for analytics and learned to think about infrastructure as something you declare, version, and audit — not something you click together in a console.
-    </p>
-
-    <!-- Chapter 4 -->
     <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">Moving to Canada — Ottawa, 2023</h2>
     <div style="border-radius:10px;overflow:hidden;margin-bottom:28px;border:1px solid var(--border)">
       <img src="Ottawa.jpg" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Ottawa.jpg'" style="width:100%;height:260px;object-fit:cover;display:block" alt="Ottawa">
-      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">Ottawa — my home since 2023, and one of Canada's fastest-growing tech hubs</p></div>
+      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">Ottawa — my home since 2023 and one of Canada's most important financial-sector tech hubs</p></div>
     </div>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:20px">
-      Moving to Canada was the biggest leap. New country, new industry norms, and a job market that values certifications and regulated-industry experience very specifically. I joined Intact Insurance as an AWS DevOps Engineer and had to ramp up fast on HIPAA compliance, SOC 2 audits, and the specifics of migrating insurance workloads to AWS.
+      Moving to Canada was the biggest leap of my career. I completed a PGDM in Data Analytics for Business Decision Making at Durham College in Oshawa, which gave me the Canadian credential base and deepened my analytics thinking. Then I started looking for a role where my Amazon Connect experience would matter.
     </p>
     <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
-      It was also the first time I ran a full on-premises to AWS migration — using SMS, DMS, and Snowball to move live workloads with minimal downtime. That project is now one of my most-visited case studies.
+      In December 2024 I joined National Bank of Canada in Ottawa as a Senior Amazon Connect Developer — working on IVR modernization, Salesforce Service Cloud Voice integration, Lex-based self-service, and production operations for a Big 6 Canadian bank. The compliance environment — PIPEDA, OSFI, PCI-DSS — is different from anything I'd seen in India, and it's made me a sharper engineer.
     </p>
 
-    <!-- Chapter 5 -->
-    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">National Bank — where I am now</h2>
-    <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:20px">
-      Since January 2025 I've been working as an Azure DevOps Engineer at National Bank of Canada — one of Canada's Big 6. The work involves AKS migrations, Terraform governance frameworks, Azure AD identity at enterprise scale, and CI/CD pipelines that deploy to production with zero downtime.
-    </p>
-    <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
-      Working in regulated Canadian finance has taught me that cloud engineering at this level is about trust. When a bank's systems go down, people can't access their money. The bar for reliability, security, and documentation is higher than anywhere else I've worked.
-    </p>
+    <!-- Chapter 4 -->
+    <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:16px">Where I am now</h2>
 
-    <!-- Team image -->
     <div style="border-radius:10px;overflow:hidden;margin-bottom:40px;border:1px solid var(--border)">
       <img src="Team.png" onerror="this.src='https://raw.githubusercontent.com/VinodKumarDhanavath/Cloud5ence/main/Team.png'" style="width:100%;height:260px;object-fit:cover;display:block" alt="Team">
-      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">Collaboration is at the heart of every successful cloud delivery</p></div>
+      <div style="padding:12px 16px;background:var(--off)"><p style="font-size:12px;color:var(--muted)">Collaboration across development, QA, and operations is what makes a contact center project land</p></div>
     </div>
+    <p style="font-size:16px;color:#3a3a3a;line-height:1.85;margin-bottom:40px">
+      At National Bank I've reduced misrouted transfers by roughly 25%, cut agent screen-load time from 45 seconds to under 8 seconds, and improved agent productivity by approximately 35% through Salesforce SCV automation. The work is deeply satisfying because when you get an IVR journey right, thousands of people have a better experience every day.
+    </p>
 
     <!-- Key lessons -->
     <h2 style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:var(--black);letter-spacing:-.3px;margin-bottom:20px">Things I've learned along the way</h2>
     <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:40px">
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--off);border-radius:8px;border:1px solid var(--border)">
-        <div style="font-size:20px;flex-shrink:0">🔧</div>
-        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Prod is the best teacher</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">No lab environment prepares you for a 2am outage. The engineers who thrive are the ones who stay calm, debug methodically, and write the post-mortem honestly.</div></div>
+        <div style="font-size:20px;flex-shrink:0">📞</div>
+        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">IVR design is UX design</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">Every menu option, every prompt, every fallback path is a micro-experience. The engineers who care about what callers actually hear are the ones who ship journeys that work.</div></div>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--off);border-radius:8px;border:1px solid var(--border)">
-        <div style="font-size:20px;flex-shrink:0">📝</div>
-        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Document everything as code</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">If your infrastructure isn't in Terraform, it doesn't exist. The discipline of IaC is what separates senior engineers from the rest.</div></div>
+        <div style="font-size:20px;flex-shrink:0">🔄</div>
+        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Migrations are discovery projects</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">You never fully understand the old system until you try to replace it. The Genesys-to-Connect migration taught me more about what Genesys was actually doing than three years of operating it.</div></div>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--off);border-radius:8px;border:1px solid var(--border)">
         <div style="font-size:20px;flex-shrink:0">🌍</div>
-        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Context matters more than tools</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">Kubernetes at Jio is a different problem from Kubernetes at a Canadian bank. The tools are the same. The constraints, compliance requirements, and risk tolerance are completely different.</div></div>
+        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Regulated markets demand a different mindset</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">Amazon Connect in a Canadian bank is a different problem from Amazon Connect in Indian telecom. The platform is the same. The compliance requirements, audit trails, and risk tolerance are completely different.</div></div>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--off);border-radius:8px;border:1px solid var(--border)">
-        <div style="font-size:20px;flex-shrink:0">🤝</div>
-        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Certs open doors, work keeps them open</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">My AWS Professional and AZ-400 certifications got me interviews in Canada. The real-world case studies from Intact and National Bank are what got me the offers.</div></div>
+        <div style="font-size:20px;flex-shrink:0">📊</div>
+        <div><div style="font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px">Measure everything before you claim anything</div><div style="font-size:13px;color:#4a4a4a;line-height:1.6">Every result I publish — 25% fewer misrouted transfers, 35% productivity improvement — came from dashboards we built before the project started. Baseline first, claim second.</div></div>
       </div>
     </div>
 
     <!-- CTA -->
     <div style="background:var(--black);border-radius:10px;padding:32px;text-align:center;margin-bottom:0">
       <div style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;color:#fff;letter-spacing:-.3px;margin-bottom:8px">Want to work together?</div>
-      <p style="font-size:14px;color:rgba(255,255,255,.7);margin-bottom:20px;line-height:1.6">I'm open to senior DevOps and Cloud Engineer roles in Ottawa or remote across Canada.</p>
+      <p style="font-size:14px;color:rgba(255,255,255,.7);margin-bottom:20px;line-height:1.6">Open to senior Amazon Connect Developer and CCaaS Engineer roles in Ottawa or remote across Canada.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
         <a onclick="showPage('contact');return false;" href="#" style="background:#fff;color:var(--black);padding:11px 24px;border-radius:4px;font-size:14px;font-weight:600;text-decoration:none">Get in touch →</a>
         <a onclick="showPage('portfolio');return false;" href="#" style="background:transparent;color:#fff;padding:11px 24px;border-radius:4px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,.4)">View my work</a>
@@ -1321,13 +1180,11 @@
     <li><a onclick="showPage('blog');return false;" href="#">blog</a></li>
     <li><a onclick="showPage('contact');return false;" href="#">contact</a></li>
   </ul>
-  <div>
-    Built on AWS S3 + CloudFront
-  </div>
+  <div>Built on AWS S3 + CloudFront</div>
 </footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   /* ── PAGE SWITCHING ── */
   function showPage(name) {
     document.querySelectorAll('.pg').forEach(function(p){ p.classList.remove('active'); });
@@ -1338,14 +1195,10 @@
     var links = document.querySelectorAll('.nav-links a');
     if(map[name] !== undefined && links[map[name]]) links[map[name]].classList.add('active');
     window.scrollTo({top:0,behavior:'smooth'});
-    // Show/hide floating back button — hide on about/home page
     var floatBack = document.getElementById('float-back');
     if(floatBack){
-      if(name === 'about'){
-        floatBack.classList.add('hidden');
-      } else {
-        floatBack.classList.remove('hidden');
-      }
+      if(name === 'about'){ floatBack.classList.add('hidden'); }
+      else { floatBack.classList.remove('hidden'); }
     }
     return false;
   }
@@ -1366,20 +1219,14 @@
     });
   }
 
-  /* ── CONTACT FORM (mailto fallback until backend connected) ── */
+  /* ── CONTACT FORM ── */
   function submitForm() {
     var name    = document.getElementById('f-name').value.trim();
     var email   = document.getElementById('f-email').value.trim();
     var company = document.getElementById('f-company').value.trim();
     var type    = document.getElementById('f-type').value;
     var msg     = document.getElementById('f-msg').value.trim();
-
-    if(!name || !email || !msg) {
-      alert('Please fill in your name, email, and message.');
-      return;
-    }
-
-    /* Opens mailto with pre-filled content — works without a backend */
+    if(!name || !email || !msg) { alert('Please fill in your name, email, and message.'); return; }
     var subject = encodeURIComponent('[Cloud5ence] ' + (type || 'Enquiry') + ' from ' + name);
     var body    = encodeURIComponent(
       'Name: ' + name + '\n' +
@@ -1388,9 +1235,7 @@
       'Type: ' + (type || 'N/A') + '\n\n' +
       msg
     );
-    window.location.href = 'mailto:Vinod.dhanavath0418@gmail.com?subject=' + subject + '&body=' + body;
-
-    /* Show success message */
+    window.location.href = 'mailto:vinoddhanavath278@gmail.com?subject=' + subject + '&body=' + body;
     document.getElementById('form-success').style.display = 'block';
     document.getElementById('f-name').value = '';
     document.getElementById('f-email').value = '';
@@ -1398,9 +1243,6 @@
     document.getElementById('f-type').value = '';
     document.getElementById('f-msg').value = '';
   }
-
-  /* ── HEADSHOT: exact file from repo ── */
-  /* If image fails to load (e.g. CORS or not yet pushed), shows friendly message */
 </script>
 </body>
 </html>
