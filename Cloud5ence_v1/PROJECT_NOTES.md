@@ -178,7 +178,7 @@ Cloud5ence/
 ├── Cloud5ence_v1/
 │   ├── cloud5ence.html              # Complete website (SPA)
 │   ├── WebsitePotrait.png           # Hero headshot
-│   ├── Ottawa.jpg                   # Photo strip
+│   ├── canada-tech-hub.jpg                   # Photo strip
 │   ├── Workspace.jpg
 │   ├── working.jpg
 │   ├── Personal.jpg

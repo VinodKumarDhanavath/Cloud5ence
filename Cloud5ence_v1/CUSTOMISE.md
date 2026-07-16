@@ -31,7 +31,7 @@ The "Coming soon" ribbon disappears automatically once the image loads.
 
 ## 3. Add / replace strip photos
 
-**Files:** `Ottawa.jpg`, `Workspace.jpg`, `working.jpg`, `Personal.jpg`, `Team.png`  
+**Files:** `canada-tech-hub.jpg`, `Workspace.jpg`, `working.jpg`, `Personal.jpg`, `Team.png`  
 **Search for:** `strip-grid` or the filename in cloud5ence.html  
 
 Replace any file with a new photo using the same filename — no code change needed.  
@@ -123,7 +123,7 @@ Copy one of the dashed border cards and update name, body, and tags.
 
 ## 9. Update contact details
 
-**Search for:** `Vinod.dhanavath0418@gmail.com` — appears in contact page and form  
+**Search for:** any hardcoded email string — should not appear; email is now assembled at runtime via getEmail() in cloud5ence.html  
 **Search for:** `linkedin.com/in/vinod-kumar-dhanavath` — LinkedIn URL
 
 ---

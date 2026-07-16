@@ -22,7 +22,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Sync website files to S3
-        run: aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/ --exclude "*" --include "*.html" --include "*.png" --include "*.jpg" --include "*.jpeg" --include "*.pdf" --include "*.svg" --include "*.ico"
+        run: aws s3 sync ./Cloud5ence_v1/ s3://${{ secrets.S3_BUCKET_NAME }}/ --exclude "*" --include "*.html" --include "*.png" --include "*.jpg" --include "*.jpeg" --include "*.svg" --include "*.ico" --include "*.txt" --include "*.xml"
 
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

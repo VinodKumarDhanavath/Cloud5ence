@@ -1,7 +1,7 @@
 # Cloud5ence — Vinod Kumar Dhanavath
 
 > Personal portfolio + live AWS DevOps project  
-> **[cloud5ence.com](https://cloud5ence.com)** · Ottawa, Canada
+> **[cloud5ence.com](https://cloud5ence.com)** · Ontario, Canada
 
 ---
 
@@ -34,7 +34,7 @@
 |---|---|
 | `cloud5ence.html` | Complete website — all 7 pages |
 | `WebsitePotrait.png` | Hero headshot |
-| `Ottawa.jpg` | Photo strip — Ottawa |
+| `canada-tech-hub.jpg` | Photo strip — Canada |
 | `Workspace.jpg` | Photo strip — Workspace |
 | `working.jpg` | Photo strip — Working |
 | `Personal.jpg` | Photo strip — Personal |
@@ -76,5 +76,5 @@ terraform init && terraform plan && terraform apply
 
 ## Author
 
-**Vinod Kumar Dhanavath** · DevOps & Cloud Engineer · Ottawa, Canada  
+**Vinod Kumar Dhanavath** · DevOps & Cloud Engineer · Ontario, Canada  
 [cloud5ence.com](https://cloud5ence.com) · [LinkedIn](https://www.linkedin.com/in/vinod-kumar-dhanavath/) · [GitHub](https://github.com/VinodKumarDhanavath)
