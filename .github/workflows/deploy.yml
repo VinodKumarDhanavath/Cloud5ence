@@ -36,6 +36,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build static website
+        env:
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ vars.NEXT_PUBLIC_GA_MEASUREMENT_ID }}
         run: pnpm build
 
       - name: Configure AWS credentials

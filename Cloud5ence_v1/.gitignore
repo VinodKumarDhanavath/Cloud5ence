@@ -60,3 +60,6 @@ secrets/
 .idea/
 
 *.tsbuildinfo
+
+# Commit the documented empty configuration template.
+!.env.example
